@@ -42,7 +42,7 @@
 ### Setup
 
 * This project was developed on Unity version `2020.3.32f1`.
-* Drag and drop the `TechDemo.unity` scene into the `Project` window.
+* Drag and drop the `TechDemo.unity` scene into the `Project` window from `Assets/Scenes/TechDemo.unity`.
 * The dependencies will be loaded and the scene can be run.
 
 ## Procedural Generation 🎮
