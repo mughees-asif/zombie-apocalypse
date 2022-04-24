@@ -1,4 +1,4 @@
-# IslandWalk 🏝🚶‍♂️
+# ZombieApocalypse ☠
 
 - Include screenshots for PG and IA in relevant sections
 
