@@ -22,10 +22,10 @@
  ┣ 📂Scenes                         // Main Scene
  ┃ ┗ 📜TechDemo.unity                   
  ┣ 📂Scripts
- ┃ ┣ 📂Agent                        // Player and enemy functionality
+ ┃ ┣ 📂Agent                        // Player and enemy definitions
  ┃ ┃ ┣ 📜Enemy.cs
  ┃ ┃ ┗ 📜Player.cs
- ┃ ┣ 📂Generator                    // Level production using procedural generation
+ ┃ ┣ 📂Generator                    // Procedural level generation
  ┃ ┃ ┣ 📜BoardManager.cs
  ┃ ┃ ┣ 📜GameManager.cs
  ┃ ┃ ┣ 📜Loader.cs
@@ -41,23 +41,50 @@
 
 ### Setup
 
+* This project was developed on Unity version `2020.3.32f1`.
 * Drag and drop the `TechDemo.unity` scene into the `Hierarchy` window.
-* The dependencies will be loaded and the scene can be then run.
+* The dependencies will be loaded and the scene can be run.
 
 ## Procedural Generation
 
 ### Level generation
 
-* The levels are generated on a `8 x 8` tile. 
+* The levels are generated on an `8 x 8` board consisting of different texture tiles located in the `📂Prefabs` folder.
+<p align="center">
+    <img src="resources/prefabs.png" height="450" width="750">
+</p>
+<p align="center">
+    <b>Fig. 1: Prefabs for the level generation</b>
+</p>
 
-* Show levels, screenshots, show ending 
+* The levels are procedurally generated using [Cellular Automation](https://mathworld.wolfram.com/CellularAutomaton.html) until the player dies i.e., runs out of health.
+<p align="center">
+    <img width=750 src="resources/start.png">
+</p>
+<p align="center">
+    <b>Fig. 2: Loading screen</b>
+</p>
+
+* Each level loads for 3 seconds with a placeholder image to indicate the level number.
+<p align="center">
+    <img width=750 src="resources/end.png">
+</p>
+<p align="center">
+    <b>Fig. 3: End screen</b>
+</p>
+
+* When the player's health reaches zero, the game ends.
 
 ### Food generation
+
+* The food regenerates the player's health by 20 points per each item. 
+* The placement of the food items is randomised within the game environment.
 
 ## Interactive Agents
 
 #### Player
 
+* The player starts off with 50 points of health. The health reduces
 * The player can be controlled by using the keyboard arrow keys.
 
 #### Enemies

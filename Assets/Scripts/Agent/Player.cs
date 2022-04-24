@@ -69,6 +69,7 @@ namespace Completed
             food--;
             foodText.text = "Health: " + food;
             base.AttemptMove<T>(xDir, yDir);
+            
             //Check if food point total is less than or equal to zero.
             if (food <= 0)
             {
