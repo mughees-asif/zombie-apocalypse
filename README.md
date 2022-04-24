@@ -1,4 +1,4 @@
-# ZombieRun 🧟
+# Zombie Run 🧟
 
 ## Video Demonstration
 
@@ -15,7 +15,7 @@
 * Food items can be collected to replenish the health.
 * The interaction of the player with the enemy or the boundary walls of the game result in a reduction in the health of the player. 
 
-#### Game structure
+### Game structure
 
 ```commandline
 📦Assets
@@ -39,20 +39,26 @@
  ┗ ┗ 📂Sprites
 ```
 
+### Setup
+
+* Drag and drop the `TechDemo.unity` scene into the `Hierarchy` window.
+* The dependencies will be loaded and the scene can be then run.
+
 ## Procedural Generation
 
-#### Level generation
+### Level generation
 
 * The levels are generated on a `8 x 8` tile. 
 
 * Show levels, screenshots, show ending 
 
-#### Food generation
+### Food generation
 
 ## Interactive Agents
 
 #### Player
 
+* The player can be controlled by using the keyboard arrow keys.
 
 #### Enemies
 
