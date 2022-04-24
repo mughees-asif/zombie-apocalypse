@@ -1,35 +1,74 @@
-# ZombieApocalypse ☠
-
-- Include screenshots for PG and IA in relevant sections
+# ZombieRun 🧟
 
 ## Video Demonstration
 
-* Include the URL for your video documentation.
-* Video documentation: this is a video hosted online (e.g. hosted privately or on YouTube) showing a screen recording of your project running. It should be at least one minute in length and show at least 3 example levels.
+* The video demonstration is available to view [here](https://youtu.be/d3jD6NM5CLE).
+
+<p align="center">
+    <img height=450 src="resources/gif_demo.gif">
+</p>
 
 ## Introduction
 
-* This project serves as ..... 
+* This mini-game was built as a project for the Interactive Agents and Procedural Generation (ECS7016P) module at Queen Mary, University of London.
+* The aim of the game is to complete the maximum number of levels without the health reaching 0.
+* Food items can be collected to replenish the health.
+* The interaction of the player with the enemy or the boundary walls of the game result in a reduction in the health of the player. 
 
-* This MUST contain all details of third party libraries or assets you have used.
-* Document how generator/agents work, with reference to relevant C# scripts.
+#### Game structure
 
+```commandline
+📦Assets
+ ┣ 📂Scenes                         // Main Scene
+ ┃ ┗ 📜TechDemo.unity                   
+ ┣ 📂Scripts
+ ┃ ┣ 📂Agent                        // Player and enemy functionality
+ ┃ ┃ ┣ 📜Enemy.cs
+ ┃ ┃ ┗ 📜Player.cs
+ ┃ ┣ 📂Generator                    // Level production using procedural generation
+ ┃ ┃ ┣ 📜BoardManager.cs
+ ┃ ┃ ┣ 📜GameManager.cs
+ ┃ ┃ ┣ 📜Loader.cs
+ ┃ ┃ ┣ 📜MovingObject.cs
+ ┃ ┃ ┗ 📜Wall.cs
+ ┣ 📂ThirdParty                     // Animations and character skins
+ ┃ ┣ 📂Animation
+ ┃ ┃ ┣ 📂Animations
+ ┃ ┃ ┗ 📂AnimatorControllers
+ ┃ ┣ 📂Prefabs
+ ┗ ┗ 📂Sprites
+```
 
 ## Procedural Generation
 
-* Include screenshots for PG and IA in relevant sections
+#### Level generation
+
+* The levels are generated on a `8 x 8` tile. 
+
+* Show levels, screenshots, show ending 
+
+#### Food generation
+
+## Interactive Agents
+
+#### Player
 
 
-## Interactive Agent
-
-* Include screenshots for PG and IA in relevant sections
-
+#### Enemies
 
 ## Third-party libraries
 
+<p align="center">
+    <img height=250 src="resources/thirdparty.png">
+</p>
+
+* The sprites, prefabs, and animations were imported from the [2D Roguelike package](https://assetstore.unity.com/packages/templates/tutorials/2d-roguelike-29825).
 
 ## Suggested Improvements
 
+* The movement of the zombies
+* Character animations
+* 
 
 ## Conclusion
 
